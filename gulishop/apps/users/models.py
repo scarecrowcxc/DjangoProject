@@ -18,3 +18,16 @@ class UserProfile(AbstractUser):
     class Meta:
         verbose_name = '用户信息'
         verbose_name_plural = verbose_name
+
+
+class VerifyCode(models.Model):
+    code = models.CharField(max_length=10, verbose_name='验证码')
+    mobile = models.CharField(max_length=11, verbose_name='验证手机')
+    add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
+
+    def __str__(self):
+        return self.code
+
+    class Meta:
+        verbose_name = '手机验证信息'
+        verbose_name_plural = verbose_name
