@@ -29,5 +29,9 @@ class VerifyCode(models.Model):
         return self.code
 
     class Meta:
-        verbose_name = '手机验证信息'
+
+        verbose_name = '手机验证码信息'
         verbose_name_plural = verbose_name
+
+
+
