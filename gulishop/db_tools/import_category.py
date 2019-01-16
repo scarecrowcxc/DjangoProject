@@ -4,7 +4,7 @@ file_path = os.path.abspath(__file__)
 
 dir_path = os.path.dirname(file_path)
 
-sys.path.append(dir_path)
+sys.path.append('/home/cxc/DjangoProject/gulishop')
 
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gulishop.settings")
