@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'trade.apps.TradeConfig',
     'operations.apps.OperationsConfig',
     'xadmin',
-    'crispy_forms'
+    'crispy_forms',
+    'DjangoUeditor',
 ]
 
 MIDDLEWARE = [

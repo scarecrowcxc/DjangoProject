@@ -22,6 +22,7 @@ class GoodsCategoryAdmin(object):
 class GoodsAdmin(object):
     list_display = ['category', 'name', 'goods_sn', 'goods_front_image', 'click_num','add_time']
     model_icon = 'fa fa-apple'
+    style_fields = {'desc': 'ueditor'}
 
 class CategoryBrandAdmin(object):
     list_display = ['category','image', 'name', 'add_time']
