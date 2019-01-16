@@ -6,6 +6,7 @@ dir_path = os.path.dirname(file_path)
 
 sys.path.append(dir_path)
 
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gulishop.settings")
 
 import django
